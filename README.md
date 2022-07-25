@@ -1,4 +1,4 @@
-Portfolio project. Uses the API as the back end of the application.
+Portfolio project. Uses the API as the back-end of the application.
 Technologies and libraries involved:
 - React
 - HTML
