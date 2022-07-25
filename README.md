@@ -7,4 +7,4 @@ Technologies and libraries involved:
 - GitHub
 - Materialize - Material Design
 
-Deploy: https://bugaienko.github.io/react-frontend-shop/
+Deploy: (https://bugaienko.github.io/react-frontend-shop/)
