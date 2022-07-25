@@ -5,7 +5,7 @@ function Footer() {
 			<div className="footer-copyright">
 				<div className="container">
 					© {new Date().getFullYear()} Sergii Bugaienko
-					<a className="grey-text text-lighten-4 right" href="#!">Repo</a>
+					<a className="https://github.com/Bugaienko/react-frontend-shop" target="_blank" rel="noreferrer">Repo</a>
 				</div>
 			</div>
 		</footer>
