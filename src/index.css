@@ -11,3 +11,210 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  padding: 0 1rem;
+}
+
+.content {
+  min-height: calc(100vh - 70px - 65px);
+  padding: 1.5rem 0;
+}
+
+.goods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.card-price {
+  font-size: 1.5rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card .card-content {
+  flex-grow: 1;
+}
+.card-action {
+
+}
+.card .btn {
+  color: whitesmoke;
+  background-color: dodgerblue;
+}
+.card .btn:hover {
+  background-color: green;
+}
+.icon-image {
+  max-width: 28px;
+  height: auto;
+  margin-right: 7px;
+  vertical-align: text-top;
+}
+
+.cart-quantity {
+
+}
+.cart {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  cursor: pointer;
+  z-index: 5;
+  padding: 1rem;
+}
+@media (min-width: 767px) {
+  .cart {
+    top: 7rem;
+    bottom: unset;
+    right: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .cart {
+    right: 10rem;
+  }
+}
+@media (min-width: 1600px) {
+  .cart {
+    right: 12rem;
+  }
+}
+.basket-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightblue;
+  width: 50rem;
+  max-width: 95%;
+  z-index: 2;
+
+  box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0 ,0, 0);
+
+  animation: show 500ms ease-in-out;
+}
+.collection .collection-item {
+  margin: 0.2rem 0.5rem;
+  background-color: whitesmoke;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+.collection .collection-item .circle {
+  border: 1px silver solid;
+}
+.collection-header {
+  padding: 0.6rem 1.2rem;
+}
+.collection-header span {
+  color: #0b325e;
+}
+.basket-btn-close {
+  position: absolute;
+  cursor: pointer;
+  top: 0.7rem;
+  right: 1.2rem;
+  color: whitesmoke;
+
+}
+.btn-item-close {
+  cursor: pointer;
+  cursor: pointer;
+  color: #1f87ff;
+}
+
+@keyframes show {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+.btn-item-change {
+  background-color: lightblue;
+  padding: 2px;
+  border: none;
+  margin: 0 3px;
+}
+.btn-item-change i{
+  font-size: 0.8rem;
+  padding: 2px;
+}
+.btn-basket-quantity {
+  cursor: pointer;
+  vertical-align: middle;
+}
+.foot {
+  display: inline-grid;
+}
+.btn-buy {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  background-color: #1f87ff;
+  color: whitesmoke;
+  padding: 5px 0;
+  border: 1px silver solid;
+  border-radius: 8px;
+}
+.btn-buy:hover {
+  background-color: green;
+}
+
+#toast-container {
+  position: fixed;
+  bottom: 5rem;
+  right: 6.5rem;
+  /*max-width: 50%;*/
+  padding-left: 8px;
+  /*top: 4rem !important;*/
+  /*right: 17rem;*/
+  animation: fade-in 250ms ease-in-out;
+  max-width: 300px;
+
+}
+@media (min-width: 590px) {
+  #toast-container {
+    /*left: 8rem;*/
+    left: 10rem;
+    right: unset;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 767px) {
+  #toast-container {
+    top: 4rem;
+    bottom: unset;
+    left: unset;
+    right: 9rem;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  #toast-container {
+    left: unset;
+    right: 16rem;
+    max-width: 500px;
+  }
+}
+@media (min-width: 1600px) {
+  #toast-container {
+    left: unset;
+    right: 17rem;
+    max-width: 500px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  } to {
+    opacity: 1;
+        transform: translateY(0rem);
+      }
+}
